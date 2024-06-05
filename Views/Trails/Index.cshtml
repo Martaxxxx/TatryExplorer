@@ -1,0 +1,32 @@
+﻿@model List<TatryExplorer.Models.Trail>
+
+<h2>Trails</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Length (km)</th>
+            <th>Time to Complete</th>
+            <th>Difficulty Level</th>
+            <th>Description</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var trail in Model)
+        {
+            <li><a asp-action="Details" asp-route-id="@trail.Id">@trail.Name</a></li>
+        
+        
+            <tr>
+                <td>@trail.Name</td>
+                <td>@trail.LengthKm</td>
+                <td>@trail.TimeToComplete</td>
+                <td>@trail.DifficultyLevel</td>
+                <td>@trail.Description</td>
+                <td><img src="@trail.Image" alt="Trail Image" style="max-width: 100px;" /></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,12 @@
+﻿@model TatryExplorer.Models.Trail
+
+<h2>Trail Details</h2>
+
+<div>
+    <h4>Name: @Model.Name</h4>
+    <p>Length (km): @Model.LengthKm</p>
+    <p>Time to Complete: @Model.TimeToComplete</p>
+    <p>Difficulty Level: @Model.DifficultyLevel</p>
+    <p>Description: @Model.Description</p>
+    <img src="@Model.Image" alt="Trail Image" style="max-width: 200px;" />
+</div>

@@ -1,0 +1,18 @@
+﻿@model List<TatryExplorer.Models.Trail>
+
+<h2>Search Results</h2>
+
+@if (Model.Any())
+{
+    <ul>
+        @foreach (var trail in Model)
+        {
+            <li>@trail.Name</li>
+            <!-- Dodaj inne informacje o trasie -->
+        }
+    </ul>
+}
+else
+{
+    <p>No trails found.</p>
+}

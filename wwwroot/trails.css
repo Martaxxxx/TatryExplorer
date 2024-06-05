@@ -1,0 +1,42 @@
+﻿/* trails.css */
+
+/* Add your custom styles for the Trails page here */
+
+/* Example styles */
+.trail-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+    .trail-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .trail-card .trail-details {
+        margin-top: 10px;
+    }
+
+    .trail-card .trail-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .trail-card .trail-info {
+        margin-top: 5px;
+        font-size: 0.9rem;
+    }
+
+    .trail-card .trail-description {
+        margin-top: 10px;
+    }
+
+/* Background image */
+body {
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
